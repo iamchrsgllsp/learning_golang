@@ -68,6 +68,7 @@ func handlehome(w http.ResponseWriter, r *http.Request) {
 }
 
 func handleSignup(w http.ResponseWriter, r *http.Request) {
+	fmt.Println("sign up")
 	tmpl, err := template.ParseGlob("templates/*")
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
