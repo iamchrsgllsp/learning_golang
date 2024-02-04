@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/static/css/main.css" rel="stylesheet" type="text/css" />
+    <script src="/static/js/functions.js"></script>
+    <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
+    <title>saas</title>
+  </head>
+  <body onload="">
+    <div class="header">
+      <p>Chat-App</p>
+      <img
+        src="https://png.pngtree.com/png-clipart/20230403/original/pngtree-dashboard-line-icon-png-image_9020881.png"
+      />
+    </div>
+    <div class="content">
+      <div class="content-menu" id="menu" onclick="showMenu2('menu2')">{{.Data}}</div>
+      <div class="content-menu2" id="menu2">{{.Data2}}</div>
+      <div class="content-item"></div>
+    </div>
+    <div class="footer">
+      <a href="/dashboard">Dashboardio</a>
+      <a href="">Contact</a>
+      <a href="">About</a>
+      <a href="">Logout</a>
+    </div>
+  </body>
+</html>
